@@ -18,6 +18,7 @@ pipeline {
             agent {
                 docker {
                     image 'qnib/pytest'
+                     label 'master'
                 }
             }
             steps {
@@ -33,6 +34,7 @@ pipeline {
             agent {
                 docker {
                     image 'cdrx/pyinstaller-linux:python2'
+                     label 'master'
                 }
             }
             steps {
